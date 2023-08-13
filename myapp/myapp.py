@@ -12,7 +12,7 @@ def get_json():
     return jsonify(data)
 
 if __name__ == '__main__':
-    app.run(debug=false)
+    app.run(debug=False)
 
 
 

@@ -97,3 +97,14 @@ FileNotFoundError: [Errno 2] No such file or directory: '/var/www/myapp/ipc.sock
 [2023-05-25 08:49:54 +0000] [42799] [INFO] Booting worker with pid: 42799
 [2023-05-25 08:49:54 +0000] [42801] [INFO] Booting worker with pid: 42801
 [2023-05-25 08:49:55 +0000] [42802] [INFO] Booting worker with pid: 42802
+[2023-07-05 01:46:21 +0000] [42794] [INFO] Handling signal: term
+[2023-07-05 01:46:21 +0000] [42799] [INFO] Worker exiting (pid: 42799)
+[2023-07-05 01:46:21 +0000] [42801] [INFO] Worker exiting (pid: 42801)
+[2023-07-05 01:46:21 +0000] [42802] [INFO] Worker exiting (pid: 42802)
+[2023-07-05 01:46:21 +0000] [42794] [INFO] Shutting down: Master
+[2023-07-05 01:46:24 +0000] [202603] [INFO] Starting gunicorn 20.1.0
+[2023-07-05 01:46:24 +0000] [202603] [INFO] Listening at: unix:/var/www/myapp/ipc.sock (202603)
+[2023-07-05 01:46:24 +0000] [202603] [INFO] Using worker: sync
+[2023-07-05 01:46:24 +0000] [202604] [INFO] Booting worker with pid: 202604
+[2023-07-05 01:46:24 +0000] [202605] [INFO] Booting worker with pid: 202605
+[2023-07-05 01:46:24 +0000] [202606] [INFO] Booting worker with pid: 202606
