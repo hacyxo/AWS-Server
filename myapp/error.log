@@ -108,3 +108,508 @@ FileNotFoundError: [Errno 2] No such file or directory: '/var/www/myapp/ipc.sock
 [2023-07-05 01:46:24 +0000] [202604] [INFO] Booting worker with pid: 202604
 [2023-07-05 01:46:24 +0000] [202605] [INFO] Booting worker with pid: 202605
 [2023-07-05 01:46:24 +0000] [202606] [INFO] Booting worker with pid: 202606
+[2023-08-13 10:28:27 +0000] [202603] [INFO] Handling signal: term
+[2023-08-13 10:28:27 +0000] [202604] [INFO] Worker exiting (pid: 202604)
+[2023-08-13 10:28:27 +0000] [202605] [INFO] Worker exiting (pid: 202605)
+[2023-08-13 10:28:27 +0000] [202606] [INFO] Worker exiting (pid: 202606)
+[2023-08-13 10:28:27 +0000] [202603] [INFO] Shutting down: Master
+[2023-08-13 10:28:29 +0000] [345474] [INFO] Starting gunicorn 20.1.0
+[2023-08-13 10:28:29 +0000] [345474] [INFO] Listening at: unix:/var/www/myapp/ipc.sock (345474)
+[2023-08-13 10:28:29 +0000] [345474] [INFO] Using worker: sync
+[2023-08-13 10:28:29 +0000] [345475] [INFO] Booting worker with pid: 345475
+[2023-08-13 10:28:29 +0000] [345476] [INFO] Booting worker with pid: 345476
+[2023-08-13 10:28:29 +0000] [345477] [INFO] Booting worker with pid: 345477
+[2023-08-13 10:29:54 +0000] [345474] [INFO] Handling signal: term
+[2023-08-13 10:29:54 +0000] [345475] [INFO] Worker exiting (pid: 345475)
+[2023-08-13 10:29:54 +0000] [345476] [INFO] Worker exiting (pid: 345476)
+[2023-08-13 10:29:54 +0000] [345477] [INFO] Worker exiting (pid: 345477)
+[2023-08-13 10:29:54 +0000] [345474] [INFO] Shutting down: Master
+[2023-08-13 10:29:57 +0000] [345504] [INFO] Starting gunicorn 20.1.0
+[2023-08-13 10:29:57 +0000] [345504] [INFO] Listening at: unix:/var/www/myapp/ipc.sock (345504)
+[2023-08-13 10:29:57 +0000] [345504] [INFO] Using worker: sync
+[2023-08-13 10:29:57 +0000] [345505] [INFO] Booting worker with pid: 345505
+[2023-08-13 10:29:57 +0000] [345506] [INFO] Booting worker with pid: 345506
+[2023-08-13 10:29:57 +0000] [345507] [INFO] Booting worker with pid: 345507
+[2023-08-13 10:31:16,838] ERROR in app: Exception on /page/test [GET]
+Traceback (most recent call last):
+  File "/var/www/myapp/myenv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/var/www/myapp/myenv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/var/www/myapp/myenv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/var/www/myapp/myenv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/var/www/myapp/myapp.py", line 20, in page_test
+    now = datetime.now()
+NameError: name 'datetime' is not defined
+[2023-08-13 10:35:05,128] ERROR in app: Exception on /page/test [GET]
+Traceback (most recent call last):
+  File "/var/www/myapp/myenv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/var/www/myapp/myenv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/var/www/myapp/myenv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/var/www/myapp/myenv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/var/www/myapp/myapp.py", line 20, in page_test
+    now = datetime.now()
+NameError: name 'datetime' is not defined
+[2023-08-13 10:37:39,699] ERROR in app: Exception on /page/test [GET]
+Traceback (most recent call last):
+  File "/var/www/myapp/myenv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/var/www/myapp/myenv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/var/www/myapp/myenv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/var/www/myapp/myenv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/var/www/myapp/myapp.py", line 20, in page_test
+    now = datetime.now()
+NameError: name 'datetime' is not defined
+[2023-08-13 10:38:03 +0000] [345504] [INFO] Handling signal: term
+[2023-08-13 10:38:03 +0000] [345505] [INFO] Worker exiting (pid: 345505)
+[2023-08-13 10:38:03 +0000] [345506] [INFO] Worker exiting (pid: 345506)
+[2023-08-13 10:38:03 +0000] [345507] [INFO] Worker exiting (pid: 345507)
+[2023-08-13 10:38:03 +0000] [345504] [INFO] Shutting down: Master
+[2023-08-13 10:38:05 +0000] [345556] [INFO] Starting gunicorn 20.1.0
+[2023-08-13 10:38:05 +0000] [345556] [INFO] Listening at: unix:/var/www/myapp/ipc.sock (345556)
+[2023-08-13 10:38:05 +0000] [345556] [INFO] Using worker: sync
+[2023-08-13 10:38:05 +0000] [345557] [INFO] Booting worker with pid: 345557
+[2023-08-13 10:38:05 +0000] [345558] [INFO] Booting worker with pid: 345558
+[2023-08-13 10:38:06 +0000] [345559] [INFO] Booting worker with pid: 345559
+[2023-08-13 10:38:11,990] ERROR in app: Exception on /page/test [GET]
+Traceback (most recent call last):
+  File "/var/www/myapp/myenv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/var/www/myapp/myenv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/var/www/myapp/myenv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/var/www/myapp/myenv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/var/www/myapp/myapp.py", line 20, in page_test
+    now = datetime.now()
+AttributeError: module 'datetime' has no attribute 'now'
+[2023-08-13 10:38:12,878] ERROR in app: Exception on /page/test [GET]
+Traceback (most recent call last):
+  File "/var/www/myapp/myenv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/var/www/myapp/myenv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/var/www/myapp/myenv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/var/www/myapp/myenv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/var/www/myapp/myapp.py", line 20, in page_test
+    now = datetime.now()
+AttributeError: module 'datetime' has no attribute 'now'
+[2023-08-13 10:38:20,650] ERROR in app: Exception on /page/test [GET]
+Traceback (most recent call last):
+  File "/var/www/myapp/myenv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/var/www/myapp/myenv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/var/www/myapp/myenv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/var/www/myapp/myenv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/var/www/myapp/myapp.py", line 20, in page_test
+    now = datetime.now()
+AttributeError: module 'datetime' has no attribute 'now'
+[2023-08-13 10:39:15,136] ERROR in app: Exception on /page/test [GET]
+Traceback (most recent call last):
+  File "/var/www/myapp/myenv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/var/www/myapp/myenv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/var/www/myapp/myenv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/var/www/myapp/myenv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/var/www/myapp/myapp.py", line 20, in page_test
+    now = datetime.now()
+AttributeError: module 'datetime' has no attribute 'now'
+[2023-08-13 10:39:15,692] ERROR in app: Exception on /page/test [GET]
+Traceback (most recent call last):
+  File "/var/www/myapp/myenv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/var/www/myapp/myenv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/var/www/myapp/myenv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/var/www/myapp/myenv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/var/www/myapp/myapp.py", line 20, in page_test
+    now = datetime.now()
+AttributeError: module 'datetime' has no attribute 'now'
+[2023-08-13 10:42:00 +0000] [345556] [INFO] Handling signal: term
+[2023-08-13 10:42:00 +0000] [345558] [INFO] Worker exiting (pid: 345558)
+[2023-08-13 10:42:00 +0000] [345559] [INFO] Worker exiting (pid: 345559)
+[2023-08-13 10:42:00 +0000] [345557] [INFO] Worker exiting (pid: 345557)
+[2023-08-13 10:42:01 +0000] [345556] [INFO] Shutting down: Master
+[2023-08-13 10:42:03 +0000] [345609] [INFO] Starting gunicorn 20.1.0
+[2023-08-13 10:42:03 +0000] [345609] [INFO] Listening at: unix:/var/www/myapp/ipc.sock (345609)
+[2023-08-13 10:42:03 +0000] [345609] [INFO] Using worker: sync
+[2023-08-13 10:42:03 +0000] [345610] [INFO] Booting worker with pid: 345610
+[2023-08-13 10:42:03 +0000] [345611] [INFO] Booting worker with pid: 345611
+[2023-08-13 10:42:03 +0000] [345612] [INFO] Booting worker with pid: 345612
+[2023-08-13 10:42:11,016] ERROR in app: Exception on /page_test [GET]
+Traceback (most recent call last):
+  File "/var/www/myapp/myenv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/var/www/myapp/myenv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/var/www/myapp/myenv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/var/www/myapp/myenv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/var/www/myapp/myapp.py", line 20, in page_test
+    now = datetime.now()
+AttributeError: module 'datetime' has no attribute 'now'
+[2023-08-13 10:43:43,780] ERROR in app: Exception on /page_test [GET]
+Traceback (most recent call last):
+  File "/var/www/myapp/myenv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/var/www/myapp/myenv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/var/www/myapp/myenv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/var/www/myapp/myenv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/var/www/myapp/myapp.py", line 20, in page_test
+AttributeError: module 'datetime' has no attribute 'now'
+[2023-08-13 10:46:40,248] ERROR in app: Exception on /page_test [GET]
+Traceback (most recent call last):
+  File "/var/www/myapp/myenv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/var/www/myapp/myenv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/var/www/myapp/myenv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/var/www/myapp/myenv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/var/www/myapp/myapp.py", line 20, in page_test
+AttributeError: module 'datetime' has no attribute 'now'
+[2023-08-13 10:46:42,972] ERROR in app: Exception on /page_test [GET]
+Traceback (most recent call last):
+  File "/var/www/myapp/myenv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/var/www/myapp/myenv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/var/www/myapp/myenv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/var/www/myapp/myenv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/var/www/myapp/myapp.py", line 20, in page_test
+AttributeError: module 'datetime' has no attribute 'now'
+[2023-08-13 10:46:43,608] ERROR in app: Exception on /page_test [GET]
+Traceback (most recent call last):
+  File "/var/www/myapp/myenv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/var/www/myapp/myenv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/var/www/myapp/myenv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/var/www/myapp/myenv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/var/www/myapp/myapp.py", line 20, in page_test
+AttributeError: module 'datetime' has no attribute 'now'
+[2023-08-13 10:46:44,079] ERROR in app: Exception on /page_test [GET]
+Traceback (most recent call last):
+  File "/var/www/myapp/myenv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/var/www/myapp/myenv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/var/www/myapp/myenv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/var/www/myapp/myenv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/var/www/myapp/myapp.py", line 20, in page_test
+AttributeError: module 'datetime' has no attribute 'now'
+[2023-08-13 10:48:16,401] ERROR in app: Exception on /page_test [GET]
+Traceback (most recent call last):
+  File "/var/www/myapp/myenv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/var/www/myapp/myenv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/var/www/myapp/myenv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/var/www/myapp/myenv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/var/www/myapp/myapp.py", line 20, in page_test
+AttributeError: module 'datetime' has no attribute 'now'
+[2023-08-13 10:48:17,157] ERROR in app: Exception on /page_test [GET]
+Traceback (most recent call last):
+  File "/var/www/myapp/myenv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/var/www/myapp/myenv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/var/www/myapp/myenv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/var/www/myapp/myenv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/var/www/myapp/myapp.py", line 20, in page_test
+AttributeError: module 'datetime' has no attribute 'now'
+[2023-08-13 10:48:43,545] ERROR in app: Exception on /page_test [GET]
+Traceback (most recent call last):
+  File "/var/www/myapp/myenv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/var/www/myapp/myenv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/var/www/myapp/myenv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/var/www/myapp/myenv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/var/www/myapp/myapp.py", line 20, in page_test
+AttributeError: module 'datetime' has no attribute 'now'
+[2023-08-13 10:48:44,093] ERROR in app: Exception on /page_test [GET]
+Traceback (most recent call last):
+  File "/var/www/myapp/myenv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/var/www/myapp/myenv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/var/www/myapp/myenv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/var/www/myapp/myenv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/var/www/myapp/myapp.py", line 20, in page_test
+AttributeError: module 'datetime' has no attribute 'now'
+[2023-08-13 10:52:22,274] ERROR in app: Exception on /page_test [GET]
+Traceback (most recent call last):
+  File "/var/www/myapp/myenv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/var/www/myapp/myenv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/var/www/myapp/myenv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/var/www/myapp/myenv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/var/www/myapp/myapp.py", line 20, in page_test
+AttributeError: module 'datetime' has no attribute 'now'
+[2023-08-13 10:52:22,988] ERROR in app: Exception on /page_test [GET]
+Traceback (most recent call last):
+  File "/var/www/myapp/myenv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/var/www/myapp/myenv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/var/www/myapp/myenv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/var/www/myapp/myenv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/var/www/myapp/myapp.py", line 20, in page_test
+AttributeError: module 'datetime' has no attribute 'now'
+[2023-08-13 10:52:26,742] ERROR in app: Exception on /page_test [GET]
+Traceback (most recent call last):
+  File "/var/www/myapp/myenv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/var/www/myapp/myenv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/var/www/myapp/myenv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/var/www/myapp/myenv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/var/www/myapp/myapp.py", line 20, in page_test
+AttributeError: module 'datetime' has no attribute 'now'
+[2023-08-13 10:54:00 +0000] [345609] [INFO] Handling signal: term
+[2023-08-13 10:54:00 +0000] [345610] [INFO] Worker exiting (pid: 345610)
+[2023-08-13 10:54:00 +0000] [345611] [INFO] Worker exiting (pid: 345611)
+[2023-08-13 10:54:00 +0000] [345612] [INFO] Worker exiting (pid: 345612)
+[2023-08-13 10:54:01 +0000] [345609] [INFO] Shutting down: Master
+[2023-08-13 10:54:03 +0000] [345684] [INFO] Starting gunicorn 20.1.0
+[2023-08-13 10:54:03 +0000] [345684] [INFO] Listening at: unix:/var/www/myapp/ipc.sock (345684)
+[2023-08-13 10:54:03 +0000] [345684] [INFO] Using worker: sync
+[2023-08-13 10:54:03 +0000] [345685] [INFO] Booting worker with pid: 345685
+[2023-08-13 10:54:03 +0000] [345686] [INFO] Booting worker with pid: 345686
+[2023-08-13 10:54:03 +0000] [345687] [INFO] Booting worker with pid: 345687
+[2023-08-13 10:54:47 +0000] [345684] [INFO] Handling signal: term
+[2023-08-13 10:54:47 +0000] [345685] [INFO] Worker exiting (pid: 345685)
+[2023-08-13 10:54:47 +0000] [345686] [INFO] Worker exiting (pid: 345686)
+[2023-08-13 10:54:47 +0000] [345687] [INFO] Worker exiting (pid: 345687)
+[2023-08-13 10:54:47 +0000] [345684] [INFO] Shutting down: Master
+[2023-08-13 10:54:49 +0000] [345699] [INFO] Starting gunicorn 20.1.0
+[2023-08-13 10:54:49 +0000] [345699] [INFO] Listening at: unix:/var/www/myapp/ipc.sock (345699)
+[2023-08-13 10:54:49 +0000] [345699] [INFO] Using worker: sync
+[2023-08-13 10:54:49 +0000] [345700] [INFO] Booting worker with pid: 345700
+[2023-08-13 10:54:49 +0000] [345701] [INFO] Booting worker with pid: 345701
+[2023-08-13 10:54:50 +0000] [345702] [INFO] Booting worker with pid: 345702
+[2023-08-13 10:55:51,345] ERROR in app: Exception on /page [GET]
+Traceback (most recent call last):
+  File "/var/www/myapp/myenv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/var/www/myapp/myenv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/var/www/myapp/myenv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/var/www/myapp/myenv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/var/www/myapp/myapp.py", line 20, in page_test
+    now = datetime.now()
+AttributeError: module 'datetime' has no attribute 'now'
+[2023-08-13 11:01:29,490] ERROR in app: Exception on /page [GET]
+Traceback (most recent call last):
+  File "/var/www/myapp/myenv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/var/www/myapp/myenv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/var/www/myapp/myenv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/var/www/myapp/myenv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/var/www/myapp/myapp.py", line 20, in page_test
+    now = datetime.now()
+AttributeError: module 'datetime' has no attribute 'now'
+[2023-08-13 11:01:30,192] ERROR in app: Exception on /page [GET]
+Traceback (most recent call last):
+  File "/var/www/myapp/myenv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/var/www/myapp/myenv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/var/www/myapp/myenv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/var/www/myapp/myenv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/var/www/myapp/myapp.py", line 20, in page_test
+    now = datetime.now()
+AttributeError: module 'datetime' has no attribute 'now'
+[2023-08-13 11:02:01,581] ERROR in app: Exception on /page [GET]
+Traceback (most recent call last):
+  File "/var/www/myapp/myenv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/var/www/myapp/myenv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/var/www/myapp/myenv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/var/www/myapp/myenv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/var/www/myapp/myapp.py", line 20, in page_test
+    now = datetime.now()
+AttributeError: module 'datetime' has no attribute 'now'
+[2023-08-13 11:02:02,208] ERROR in app: Exception on /page [GET]
+Traceback (most recent call last):
+  File "/var/www/myapp/myenv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/var/www/myapp/myenv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/var/www/myapp/myenv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/var/www/myapp/myenv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/var/www/myapp/myapp.py", line 20, in page_test
+    now = datetime.now()
+AttributeError: module 'datetime' has no attribute 'now'
+[2023-08-13 11:02:04,933] ERROR in app: Exception on /page [GET]
+Traceback (most recent call last):
+  File "/var/www/myapp/myenv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/var/www/myapp/myenv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/var/www/myapp/myenv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/var/www/myapp/myenv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/var/www/myapp/myapp.py", line 20, in page_test
+    now = datetime.now()
+AttributeError: module 'datetime' has no attribute 'now'
+[2023-08-13 11:04:25 +0000] [345699] [INFO] Handling signal: term
+[2023-08-13 11:04:25 +0000] [345700] [INFO] Worker exiting (pid: 345700)
+[2023-08-13 11:04:25 +0000] [345701] [INFO] Worker exiting (pid: 345701)
+[2023-08-13 11:04:25 +0000] [345702] [INFO] Worker exiting (pid: 345702)
+[2023-08-13 11:04:25 +0000] [345699] [INFO] Shutting down: Master
+[2023-08-13 11:04:28 +0000] [345756] [INFO] Starting gunicorn 20.1.0
+[2023-08-13 11:04:28 +0000] [345756] [INFO] Listening at: unix:/var/www/myapp/ipc.sock (345756)
+[2023-08-13 11:04:28 +0000] [345756] [INFO] Using worker: sync
+[2023-08-13 11:04:28 +0000] [345757] [INFO] Booting worker with pid: 345757
+[2023-08-13 11:04:28 +0000] [345758] [INFO] Booting worker with pid: 345758
+[2023-08-13 11:04:28 +0000] [345759] [INFO] Booting worker with pid: 345759
+[2023-08-13 11:06:01 +0000] [345756] [INFO] Handling signal: term
+[2023-08-13 11:06:01 +0000] [345757] [INFO] Worker exiting (pid: 345757)
+[2023-08-13 11:06:01 +0000] [345758] [INFO] Worker exiting (pid: 345758)
+[2023-08-13 11:06:01 +0000] [345759] [INFO] Worker exiting (pid: 345759)
+[2023-08-13 11:06:01 +0000] [345756] [INFO] Shutting down: Master
+[2023-08-13 11:06:03 +0000] [345773] [INFO] Starting gunicorn 20.1.0
+[2023-08-13 11:06:03 +0000] [345773] [INFO] Listening at: unix:/var/www/myapp/ipc.sock (345773)
+[2023-08-13 11:06:03 +0000] [345773] [INFO] Using worker: sync
+[2023-08-13 11:06:03 +0000] [345774] [INFO] Booting worker with pid: 345774
+[2023-08-13 11:06:03 +0000] [345775] [INFO] Booting worker with pid: 345775
+[2023-08-13 11:06:03 +0000] [345776] [INFO] Booting worker with pid: 345776
+[2023-08-13 11:09:49 +0000] [345773] [INFO] Handling signal: term
+[2023-08-13 11:09:49 +0000] [345775] [INFO] Worker exiting (pid: 345775)
+[2023-08-13 11:09:49 +0000] [345776] [INFO] Worker exiting (pid: 345776)
+[2023-08-13 11:09:49 +0000] [345774] [INFO] Worker exiting (pid: 345774)
+[2023-08-13 11:09:49 +0000] [345773] [INFO] Shutting down: Master
+[2023-08-13 11:09:51 +0000] [345798] [INFO] Starting gunicorn 20.1.0
+[2023-08-13 11:09:51 +0000] [345798] [INFO] Listening at: unix:/var/www/myapp/ipc.sock (345798)
+[2023-08-13 11:09:51 +0000] [345798] [INFO] Using worker: sync
+[2023-08-13 11:09:51 +0000] [345799] [INFO] Booting worker with pid: 345799
+[2023-08-13 11:09:51 +0000] [345800] [INFO] Booting worker with pid: 345800
+[2023-08-13 11:09:51 +0000] [345801] [INFO] Booting worker with pid: 345801
+[2023-08-13 11:09:53,717] ERROR in app: Exception on /page/now [GET]
+Traceback (most recent call last):
+  File "/var/www/myapp/myenv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/var/www/myapp/myenv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/var/www/myapp/myenv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/var/www/myapp/myenv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/var/www/myapp/myapp.py", line 23, in page_now
+    KST = timezone('Asial/Seoul')
+  File "/var/www/myapp/myenv/lib/python3.10/site-packages/pytz/__init__.py", line 188, in timezone
+    raise UnknownTimeZoneError(zone)
+pytz.exceptions.UnknownTimeZoneError: 'Asial/Seoul'
+[2023-08-13 11:10:37,345] ERROR in app: Exception on /page/now [GET]
+Traceback (most recent call last):
+  File "/var/www/myapp/myenv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/var/www/myapp/myenv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/var/www/myapp/myenv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/var/www/myapp/myenv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/var/www/myapp/myapp.py", line 23, in page_now
+    KST = timezone('Asial/Seoul')
+  File "/var/www/myapp/myenv/lib/python3.10/site-packages/pytz/__init__.py", line 188, in timezone
+    raise UnknownTimeZoneError(zone)
+pytz.exceptions.UnknownTimeZoneError: 'Asial/Seoul'
+[2023-08-13 11:10:38,032] ERROR in app: Exception on /page/now [GET]
+Traceback (most recent call last):
+  File "/var/www/myapp/myenv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/var/www/myapp/myenv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/var/www/myapp/myenv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/var/www/myapp/myenv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/var/www/myapp/myapp.py", line 23, in page_now
+    KST = timezone('Asial/Seoul')
+  File "/var/www/myapp/myenv/lib/python3.10/site-packages/pytz/__init__.py", line 188, in timezone
+    raise UnknownTimeZoneError(zone)
+pytz.exceptions.UnknownTimeZoneError: 'Asial/Seoul'
+[2023-08-13 11:12:51 +0000] [345798] [INFO] Handling signal: term
+[2023-08-13 11:12:51 +0000] [345799] [INFO] Worker exiting (pid: 345799)
+[2023-08-13 11:12:51 +0000] [345800] [INFO] Worker exiting (pid: 345800)
+[2023-08-13 11:12:51 +0000] [345801] [INFO] Worker exiting (pid: 345801)
+[2023-08-13 11:12:52 +0000] [345798] [INFO] Shutting down: Master
+[2023-08-13 11:12:54 +0000] [345816] [INFO] Starting gunicorn 20.1.0
+[2023-08-13 11:12:54 +0000] [345816] [INFO] Listening at: unix:/var/www/myapp/ipc.sock (345816)
+[2023-08-13 11:12:54 +0000] [345816] [INFO] Using worker: sync
+[2023-08-13 11:12:54 +0000] [345817] [INFO] Booting worker with pid: 345817
+[2023-08-13 11:12:54 +0000] [345818] [INFO] Booting worker with pid: 345818
+[2023-08-13 11:12:54 +0000] [345819] [INFO] Booting worker with pid: 345819
+[2023-08-13 11:19:33 +0000] [345816] [INFO] Handling signal: term
+[2023-08-13 11:19:33 +0000] [345817] [INFO] Worker exiting (pid: 345817)
+[2023-08-13 11:19:33 +0000] [345818] [INFO] Worker exiting (pid: 345818)
+[2023-08-13 11:19:33 +0000] [345819] [INFO] Worker exiting (pid: 345819)
+[2023-08-13 11:19:33 +0000] [345816] [INFO] Shutting down: Master
+[2023-08-13 11:19:36 +0000] [345843] [INFO] Starting gunicorn 20.1.0
+[2023-08-13 11:19:36 +0000] [345843] [INFO] Listening at: unix:/var/www/myapp/ipc.sock (345843)
+[2023-08-13 11:19:36 +0000] [345843] [INFO] Using worker: sync
+[2023-08-13 11:19:36 +0000] [345844] [INFO] Booting worker with pid: 345844
+[2023-08-13 11:19:36 +0000] [345845] [INFO] Booting worker with pid: 345845
+[2023-08-13 11:19:36 +0000] [345846] [INFO] Booting worker with pid: 345846
